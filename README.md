@@ -25,7 +25,7 @@ key-extraction budget for any XOR depth off `results/transfer_nomogram.csv`.
 | `code/ecc_overhead.py` | Cost model: measured BER → code-offset fuzzy-extractor budget (response bits + helper data) for a 128-bit key at P_fail ≤ 1e-6. BCH dimensions computed from 2-cyclotomic cosets, not table lookup |
 | `code/design_rule.py` | Joins both axes into the parameter-selection table (attacker CRP cost vs. silicon cost per XOR depth) |
 | `code/transfer_law.py` | Validates the XOR error-propagation law against the measured surface and emits the silicon-transfer nomogram |
-| `code/make_figures.py`, `code/make_figures_ext.py` | Regenerate every figure and summary table from the result CSVs |
+| `code/make_figures.py`, `code/make_figures_ext.py`, `code/make_graphical_abstract.py` | Regenerate every figure, the graphical abstract and the summary tables from the result CSVs |
 | `results/*.csv` | All numbers reported in the paper |
 | `figures/*.{pdf,png}` | All figures in the paper |
 
@@ -41,6 +41,7 @@ python3 design_rule.py         # the parameter-selection table
 python3 transfer_law.py        # XOR-law validation + silicon-transfer nomogram
 python3 make_figures.py        # all figures and summary tables
 python3 make_figures_ext.py    # design-frontier and transfer figures
+python3 make_graphical_abstract.py
 ```
 
 All experiments use fixed seeds, so the CSVs and figures are reproduced bit-for-bit.
