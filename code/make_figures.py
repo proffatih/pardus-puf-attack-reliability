@@ -150,8 +150,15 @@ def fig_ipuf():
     ax.set_xlabel("Training-set size (CRPs)")
     ax.set_ylabel("Test accuracy")
     ax.set_title("Interpose-PUF modeling resistance ($n{=}64$)")
-    ax.set_ylim(0.45, 1.02)
-    ax.legend(ncol=2, fontsize=8.5)
+    ax.set_ylim(0.45, 1.10)
+    # budgets are a small discrete set: label them explicitly instead of leaving
+    # a single decade tick, and keep the legend clear of the (2,2) LR series
+    budgets = sorted(ip.train_size.unique())
+    ax.set_xticks(budgets)
+    ax.set_xticklabels([f"{int(b/1000)}k" for b in budgets])
+    ax.minorticks_off()
+    ax.legend(ncol=3, fontsize=8.5, loc="upper center",
+              bbox_to_anchor=(0.5, 1.0), framealpha=1.0, edgecolor="0.7")
     save(fig, "fig_ipuf")
 
 
