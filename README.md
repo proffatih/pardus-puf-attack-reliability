@@ -48,6 +48,16 @@ python3 make_graphical_abstract.py
 
 All experiments use fixed seeds, so the CSVs and figures are reproduced bit-for-bit.
 
+## Citing this archive
+
+Archived on Zenodo with a permanent DOI:
+
+> Gül, F. (2026). *Reproducibility archive: Error-Correction Cost of Strong-PUF Hardening —
+> Selecting XOR Depth for Constrained Devices* [Software]. Zenodo.
+> https://doi.org/10.5281/zenodo.21995929
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21995929.svg)](https://doi.org/10.5281/zenodo.21995929)
+
 ## License
 
 Code released under the MIT License; results and figures under CC BY 4.0.
