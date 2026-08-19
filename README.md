@@ -54,9 +54,18 @@ Archived on Zenodo with a permanent DOI:
 
 > Gül, F. (2026). *Reproducibility archive: Error-Correction Cost of Strong-PUF Hardening —
 > Selecting XOR Depth for Constrained Devices* [Software]. Zenodo.
-> https://doi.org/10.5281/zenodo.21995929
+> https://doi.org/10.5281/zenodo.21995928
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21995929.svg)](https://doi.org/10.5281/zenodo.21995929)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21995928.svg)](https://doi.org/10.5281/zenodo.21995928)
+
+### Version history
+
+- **v1.1** (19 Aug 2026) — removed a hard-coded local path from the figure scripts and vendored the
+  plotting-style module into `code/pro_style.py`, so the archive is self-contained and the figures
+  reproduce bit-for-bit anywhere. No result, table or figure changed.
+- **v1.0** (18 Aug 2026) — initial deposit.
+
+The DOI above is the Zenodo **concept** DOI and always resolves to the newest version.
 
 ## License
 

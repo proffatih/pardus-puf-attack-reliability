@@ -18,7 +18,6 @@ import pandas as pd
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-import sys as _sys; _sys.path.insert(0,'/home/pardus/Papers/_templates')
 try:
     from pro_style import apply as _pa; _pa()
 except Exception as _e:
